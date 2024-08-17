@@ -1,0 +1,16 @@
+<body class="bg-blue-100 min-h-screen flex flex-col items-center justify-center">
+
+    <header class="text-4xl font-bold text-blue-800 mb-8">
+
+    <main class="bg-white p-8 rounded-lg shadow-md">
+
+        <form id="taxForm" class="mb-6">
+
+            <label for="income" class="block mb-2 text-blue-700">
+
+            <input type="number" id="income" name="income" required class="w-full p-2 border border-blue-300 rounded">
+
+            <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                
+        <div id="result" class="text-lg font-semibold text-blue-800">
+            
