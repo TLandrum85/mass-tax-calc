@@ -1,4 +1,4 @@
-// tax rates
+// Define tax rates
 var taxRateUnder50k = 0.05;
 var taxRateBetween50kAnd100k = 0.055;
 var taxRateOver100k = 0.06;
@@ -9,17 +9,18 @@ console.log("Tax rates set:", taxRateUnder50k, taxRateBetween50kAnd100k, taxRate
 var inputFromHTML = document.querySelector("input");
 var formFromHTML = document.querySelector("form");
 var resultElement = document.querySelector("#result");
+
 console.log("HTML elements selected:", inputFromHTML, formFromHTML, resultElement);
 
 // Add event listener to form
 formFromHTML.addEventListener("submit", function(event) {
     console.log("Form submitted");
     
-    // Prevent form from reloading
+    // Prevent form from refreshing page
     event.preventDefault();
     console.log("Default form submission prevented");
 
-    // Get income from input
+    // Get income value from input
     var grossIncome = Number(inputFromHTML.value);
     console.log("Gross income entered:", grossIncome);
 
@@ -43,6 +44,13 @@ formFromHTML.addEventListener("submit", function(event) {
     // Calculate net income
     var netIncome = grossIncome - taxDue;
     console.log("Net income calculated:", netIncome);
+
+    // Prepare result message
+    var resultMessage = "Your gross income is $" + grossIncome.toFixed(2) + 
+                        ". Tax due: $" + taxDue.toFixed(2) + 
+                        ". Net income: $" + netIncome.toFixed(2);
+    
+    console.log("Result message created:", resultMessage);
 
     // Display result on page
     resultElement.textContent = resultMessage;
