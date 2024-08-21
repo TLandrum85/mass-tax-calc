@@ -9,7 +9,6 @@ console.log("Tax rates set:", taxRateUnder50k, taxRateBetween50kAnd100k, taxRate
 var inputFromHTML = document.querySelector("input");
 var formFromHTML = document.querySelector("form");
 var resultElement = document.querySelector("#result");
-
 console.log("HTML elements selected:", inputFromHTML, formFromHTML, resultElement);
 
 // Add event listener to form
