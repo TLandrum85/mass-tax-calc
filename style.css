@@ -1,16 +1,94 @@
-<body class="bg-blue-100 min-h-screen flex flex-col items-center justify-center">
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap';
 
-    <header class="text-4xl font-bold text-blue-800 mb-8">
+body {
+    background-color: LightGray;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    line-height: 1.6;
+}
 
-    <main class="bg-white p-8 rounded-lg shadow-md">
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
 
-        <form id="taxForm" class="mb-6">
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
-            <label for="income" class="block mb-2 text-blue-700">
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+.calculator-container {
+    background-color: LightGray;
+    border-radius: 8px;
+    padding: 2rem;
+}
 
-            <input type="number" id="income" name="income" required class="w-full p-2 border border-blue-300 rounded">
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
 
-            <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                
-        <div id="result" class="text-lg font-semibold text-blue-800">
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: black;
+}
+
+button {
+    width: 100%;
+    background-color: DodgerBlue;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: DarkBlue;
+}
+
+.result {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: yellow;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
             
